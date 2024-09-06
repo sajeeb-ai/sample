@@ -1,0 +1,30 @@
+#calculating CGPA
+term_1=input("Enter your 1-1 trem GPA:\n")
+a=float(term_1)
+term_2=input("Enter your 1-2 trem GPA:\n")
+b=float(term_2)
+term_3=input("Enter your 2-1 trem GPA:\n")
+c=float(term_3)
+term_4=input("Enter your 2-2 trem GPA:\n")
+d=float(term_4)
+term_5=input("Enter your 3-1 trem GPA:\n")
+e=float(term_5)
+term_6=input("Enter your 3-2 trem GPA:\n")
+f=float(term_6)
+term_7=input("Enter your 4-1 trem GPA:\n")
+g=float(term_7)
+term_8=input("Enter your 4-2 trem GPA:\n")
+h=float(term_8)
+term= a+b+c+d+e+f+g+h
+total=term/8
+if total<3 and total>2:
+    o=format(total, ".2f")
+    print("You got Second Class.\n CGPA-",o)
+elif total<3.50 and total>=3.00:
+    q=format(total, ".2f")
+    print("You get First class.Your result is good.\n CGPA-",q)
+elif total<=4.00 and total>=3.50:
+    r=format(total, ".2f")
+    print("Your result is Excellent.Please welcome for Thesis.\n CGPA-",r)
+else:
+    print("Opps!I don't recognise you.")
